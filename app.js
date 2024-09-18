@@ -5,7 +5,7 @@ let movieDataArr = [];
 
 // Event listener for the Search button
 btn.addEventListener('click', () => {
-  fetch(`http://www.omdbapi.com/?t=${inp.value}&apikey=b30db41c`)
+  fetch(`https://www.omdbapi.com/?t=${inp.value}&apikey=b30db41c`)
     .then((req) => req.json())
     .then((data) => {
       // Add the movie data to the beginning of the array
